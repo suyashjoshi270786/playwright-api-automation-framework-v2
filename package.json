@@ -7,7 +7,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --require-module ts-node/register --require \"./mainTest1/**/*.ts\" \"./mainTest1/tests/features/*.feature\""
+    "test": "cucumber-js --require-module ts-node/register --require \"./mainTest1/**/*.ts\" \"./mainTest1/tests/features/*.feature\" --format json:./report/cucumber-report.json",
+  "report": "node ./report/generate-report.js",
+  "test:report": "npm run test && npm run report"
+
   },
   "dependencies": {
     "playwright": "^1.57.0",
@@ -18,6 +21,7 @@
     "@cucumber/cucumber": "^12.3.0",
     "@playwright/test": "^1.57.0",
     "cucumber-html-reporter": "^7.2.0",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "multiple-cucumber-html-reporter": "^3.9.3"
   }
 }

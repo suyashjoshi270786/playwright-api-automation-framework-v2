@@ -1,0 +1,297 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-place-api;add-a-new-place-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add a new place successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9324500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a new place and store the place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1307837100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should have a valid place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2676999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-place-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add Place API",
+    "tags": [],
+    "uri": "mainTest1\\tests\\features\\addPlace.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "delete-place-api;",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1376999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a new place and store the place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25538900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I call Delete place API",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2388809299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can delete existing generated place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2755000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2502700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-place-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Delete place API",
+    "tags": [],
+    "uri": "mainTest1\\tests\\features\\deletePlace.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-place-api;get-place-details-of-an-existing-place-id",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Get place details of an existing place id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1677400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a new place and store the place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28350499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I call the get place API",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1541753799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should receive the correct place details",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2119699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 902200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-place-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get Place API",
+    "tags": [],
+    "uri": "mainTest1\\tests\\features\\getPlace.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "update-place-api;update-an-existing-place-using-place-id",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Update an existing place using place id",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 780000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a new place and store the place id",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22536300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I call the Update Place API",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2312678399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should update the place details correctly",
+            "match": {
+              "location": "mainTest1\\tests\\steps\\placeSteps.ts:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2813200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1508599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "update-place-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Update place API",
+    "tags": [],
+    "uri": "mainTest1\\tests\\features\\updatePlace.feature"
+  }
+]
