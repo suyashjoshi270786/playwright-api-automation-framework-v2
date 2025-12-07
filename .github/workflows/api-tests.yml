@@ -4,8 +4,13 @@ on:
   # Manual trigger from GitHub UI
   workflow_dispatch:
 
+  # Trigger on every push to main
+  push:
+    branches:
+      - main
+
   # Scheduled run: 7:00 AM IST every day
-  # GitHub Actions uses UTC → 07:00 IST = 01:30 UTC
+  # IST (UTC+5:30) → 07:00 IST = 01:30 UTC
   schedule:
     - cron: "30 1 * * *"
 
@@ -15,29 +20,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 — Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2 — Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
 
-      # Step 3 — Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4 — Run Cucumber API tests (creates cucumber-report.json)
       - name: Run API Tests
         run: npm run test
 
-      # Step 5 — Generate HTML Cucumber Report (multiple-cucumber-html-reporter)
       - name: Generate HTML Cucumber Report
         run: npm run report
 
-      # Step 6 — Upload HTML report as GitHub artifact
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
